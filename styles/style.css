@@ -383,3 +383,77 @@ a:not([href]):not([tabindex]) {
     color: #333;
 }
 
+   
+/* MENU STYLES */
+.menu-blocks {
+    transition: all 0.5s;
+}
+.menu-blocks.hidex {
+    z-index: -999;
+}
+.menu-blocks.showx {
+    z-index: 999;
+}
+.menu-block {
+    cursor: pointer;
+}
+.menu-item {
+    cursor: pointer;
+}
+h2.menu-item {
+    position: relative;
+    color: #FFF;
+    margin: 50px;
+    font-size: 32px;
+    font-weight: 500;
+    transition: all 1s ease-out;
+}
+.dark h2.menu-item {
+    color: #333;
+}
+h2.menu-item:before {
+    position: absolute;
+    top: -40px;
+    left: -20px;
+    font-size: 14px;
+    transition: all 0.5s ease;
+}
+h2.about.menu-item:before {
+    content: '01';
+}
+h2.timeline.menu-item:before {
+    content: '02';
+}
+h2.skills.menu-item:before {
+    content: '03';
+}
+h2.portfolio.menu-item:before {
+    content: '04';
+}
+h2.contact.menu-item:before {
+    content: '05';
+}
+.menu-block:hover h2.menu-item:before {
+    top: -20px;
+    left: -40px;
+}
+h2.menu-item:after {
+    position: absolute;
+    content: '';
+    top: -10px;
+    left: -20px;
+    width: 70px;
+    height: 1px;
+    background: #FFF;
+    transition: all 0.5s ease;
+}
+.dark h2.menu-item:after {
+    background: #333;
+}
+.menu-block:hover h2.menu-item:after {
+    top: 12px;
+    left: -40px;
+}
+.menu-block:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
