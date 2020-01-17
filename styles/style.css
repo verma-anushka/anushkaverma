@@ -1,0 +1,339 @@
+
+/* GENERAL */
+body {
+    font: 400 14px 'Poppins', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 30px;
+    color: #727272;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 2.2;
+    overflow-x: hidden;
+}
+a {
+    transition: all 0.3s;
+}
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    transition: all 0.3s;
+}
+.hidex {
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1
+}
+.hide {
+    display: none;
+}
+.display-block {
+    display: block;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #333;
+    letter-spacing: 1px;
+}
+h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+h2 {
+    font-size: 22px;
+    line-height: 26px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+h3 {
+    font-size: 20px;
+    line-height: 26px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+h4 {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+h5 {
+    font-size: 15px;
+    line-height: 32px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+h6 {
+    font-size: 14px;
+    line-height: 32px;
+    font-weight: 500;
+}
+p {
+    margin: 0;
+    margin-bottom: 30px;
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+strong,
+small {
+    color: #333;
+}
+
+/* BUTTONS */
+a:not([href]):not([tabindex]) {
+    color: #FFF;
+    cursor: pointer;
+}
+.btn {
+    border: 2px solid transparent;
+    border-radius: 0;
+    padding: 12px 28px;
+    margin: 20px 0;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    transition: all .3s;
+    position: relative;
+    color: #FFF;
+    background-color: #333;
+    z-index: 20;
+    letter-spacing: 2px;
+    overflow: hidden;
+}
+.btn:hover {
+    color: #666;
+    background-color: #FFF;
+    border: 2px solid #666;
+    letter-spacing: 3px;
+}
+.btn:focus {
+    box-shadow: none;
+    color: #FFF;
+    outline: none;
+}
+.btn-download {
+    border: none;
+    font-size: 14px;
+    padding: 16px 55px 16px 25px;
+}
+.btn-download:hover {
+    border: none;
+    color: #FFF;
+    background-color: #333;
+    letter-spacing: 2px;
+}
+.btn-download:before {
+    position: absolute;
+    content: '\f019';
+    font-family: 'Font Awesome 5 Free';
+    top: 12px;
+    right: 16px;
+    font-size: 24px;
+}
+.btn-download:hover:before {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: fadeOutDown;
+    animation-name: fadeOutDown;
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+}
+.btn-download:after {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    z-index: -1;
+    transition: all .3s;
+}
+.btn-download:hover:after {
+    width: 58px;
+    height: 70px;
+    right: -5px;
+    top: -5px;
+    -ms-transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+}
+
+/*  */
+#main {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	opacity: 0;
+}
+.home {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    overflow: hidden;
+    background-size: cover;
+    z-index: 0
+}
+.overlay {
+    background-color: rgba(0, 0, 0, 1);
+    height: 100%;
+    position: fixed;
+    width: 100%;
+}
+.overlay.light {
+    background-color: rgba(255, 255, 255, 1);
+}
+.opacity9 {
+    opacity: 0.9;
+}
+.opacity7 {
+    opacity: 0.7;
+}
+.opacity5 {
+    opacity: 0.5;
+}
+.opacity3 {
+    opacity: 0.3;
+}
+.opacity1 {
+    opacity: 0.1;
+}
+.opacity0 {
+    opacity: 0.0;
+}
+
+/* */
+#text-slider {
+    width: 400px;
+}
+#text-slider .owl-item {
+    visibility: hidden;
+}
+#text-slider .owl-item.active {
+    visibility: visible;
+}
+
+
+/* NAME */
+.name-block {
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    display: table;
+    transition: all 0.5s;
+    z-index: 1
+}
+.name-block.reverse {
+    position: absolute;
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    width: 30%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    padding: 0;
+    border: none;
+    display: table;
+}
+.name-block-container.reverse {
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    padding: 0 30px;
+}
+.name-block-container {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 230px;
+    padding-top: 100px;
+    -ms-transform: rotate(34deg);
+    -webkit-transform: rotate(34deg);
+    transform: rotate(34deg);
+}
+.name-block-container h1,
+.name-block-container h2 {
+    text-transform: capitalize;
+    font-weight: 700;
+    color: #FFF;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.name-block-container h2 {
+    font-size: 32px;
+    min-height: 32px;
+}
+.name-block-container h1 span {
+    font-size: 26px;
+    font-weight: 300;
+    display: block;
+    text-transform: capitalize;
+}
+
+/* SOCIAL */
+#splash {
+    font-size: 3em;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+        0px 8px 13px rgba(0, 0, 0, 0.5),
+        0px 18px 23px rgba(0, 0, 0, 0.1);
+} 
+#splash a {
+    color: #fff;
+} 
+#splash a:hover {
+    color: #e7e7e7;
+}
+.social {
+    position: absolute;
+    bottom: 15%;
+}
+.social li {
+    display: inline-block;
+    margin-right: 2px;
+    text-align: center;
+}
+.social a {
+    border: 2px solid #FFF;
+    border-radius: 50%;
+    color: #FFF;
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    transition: all 0.5s;
+}
+.social li i {
+    line-height: 32px;
+    font-size: 12px;
+}
+.social a:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 2px solid transparent;
+    color: #333;
+}
+
