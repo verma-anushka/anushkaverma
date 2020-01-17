@@ -12,5 +12,15 @@
 	});
 
 
+	//On Click Open Menu Items
+	$('.menu-block, .menu-item').on('click', function () {
+		$('.name-block').addClass('reverse');
+		$('.name-block-container').addClass('reverse');
+		$('.main-menu').addClass('hidex');
+		$('.main-menu').addClass('hide');
+		$('.left-menu').removeClass('hidex');
+		$('.left-menu').removeClass('hide');
+		$('.menu-blocks').addClass('hidex');
+	});
 
 })(jQuery);

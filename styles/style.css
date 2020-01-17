@@ -295,6 +295,52 @@ a:not([href]):not([tabindex]) {
     display: block;
     text-transform: capitalize;
 }
+.img-container {
+    max-width: 150px;
+    margin-left: 55px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+.img-container:hover {
+    color: #fff;
+}
+@keyframes float {
+    0% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        transform: translatey(0px);
+   }
+    50% {
+        box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+        transform: translatey(-20px);
+   }
+    100% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        transform: translatey(0px);
+   }
+}
+.img-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.img-container .avatar {
+    width: 150px;
+    height: 150px;
+    box-sizing: border-box;
+    border: 5px white solid;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
+}
+.avatar img {
+    width: 100%;
+    height: auto;
+}
 
 /* SOCIAL */
 #splash {
