@@ -21,6 +21,8 @@
 		$('.left-menu').removeClass('hidex');
 		$('.left-menu').removeClass('hide');
 		$('.menu-blocks').addClass('hidex');
+		$('.inline-menu-container').addClass('showx');
+		$('.inline-menu-container.style2').addClass('dark');
 	});
 	//On Click Open About/Resume Block
 	$('.about-block, .menu-item.about').on('click', function () {
@@ -82,4 +84,8 @@
 		$('.menu-item').removeClass('active');
 	});
 
+	$('.menu-block, .menu-item, #close').on('click', function () {
+		$('.content-blocks').animate({ scrollTop: 0 }, 800);
+	});
+	
 })(jQuery);

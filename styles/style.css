@@ -457,3 +457,98 @@ h2.menu-item:after {
 .menu-block:hover {
     background: rgba(0, 0, 0, 0.1);
 }
+
+/* INLINE MENU */
+.inline-menu-container {
+    background: #F1F3F6;
+    position: fixed;
+    height: 40px;
+    width: 75%;
+    right: 0px;
+    top: -50px;
+    transition: all 0.5s;
+    z-index: 1;
+}
+.inline-menu-container.showx {
+    top: 0;
+}
+#close i {
+    font-size: 30px;
+    vertical-align: middle
+}
+.inline-menu {
+    float: right;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 20px;
+}
+.inline-menu li {
+    display: inline-block;
+    cursor: pointer;
+    font-weight: 600;
+    line-height: 40px;
+    margin-top: -5px;
+    padding: 0 15px;
+    color: #666;
+}
+.inline-menu li.active,
+.inline-menu li:hover {
+    color: #000;
+}
+.inline-menu li.active {
+    cursor: text;
+}
+.close-pop {
+    background-color: #F1F3F6;
+    cursor: pointer;
+    line-height: 40px;
+    height: 40px;
+    position: fixed;
+    text-align: center;
+    width: 69%;
+    right: 13px;
+    top:-60px;
+    transition: all 0.7s;
+    z-index: 1;
+}
+.close-pop:hover {
+    opacity: 0.7;
+}
+.content-blocks.pop.showx .close-pop {
+	top: 0;
+}
+
+/* GRID */
+.content-blocks {
+    position: fixed;
+    width: 75%;
+    height: 100vh;
+    opacity: 0.5;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    top: 100%;
+    left: 25%;
+    background: #FFF;
+    transition: opacity 0.7s ease-out;
+    -webkit-overflow-scrolling: touch;
+}
+.content-blocks.showx {
+	opacity: 1;
+    top: 0;
+}
+.content {
+    padding: 120px 70px 30px;
+}
+.content-blocks.pop {
+    left: 100%;
+    opacity: 0.3;
+    top: 0;
+    transition: all 0.3s ease-out;
+}
+.content-blocks.pop.showx {
+    left: 30%;
+    opacity: 1;
+}
+.content-blocks.pop .content {
+    padding-top: 110px;
+}
