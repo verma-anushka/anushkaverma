@@ -1,6 +1,23 @@
 (function ($) {
 	"use strict";
 
+	$(window).on('load', function () {
+
+		setTimeout(function () {
+			$(".pin").text("Loading");
+			$(".loader-wrap").fadeTo(750, 1, function () {
+				$("#main").animate({
+					opacity: "1"
+				}, 750);
+			});
+		}, 1500);
+
+		setTimeout(function () {
+			$(".preloader").css("opacity", "0");
+		}, 2500);
+
+	});
+
 	$('#text-slider').owlCarousel({
 		nav: false,
 		items: 1,
@@ -41,6 +58,9 @@
 		$('.content-blocks.timeline').removeClass('hide');
 		$('.menu-item').removeClass('active');
 		$('.menu-item.timeline').addClass('active');
+
+		$("#timeline-1").timeline();
+		$("#timeline-2").timeline();
 	});
 	//On Click Open Skills Block
 	$('.skills-block, .menu-item.skills').on('click', function () {
@@ -87,5 +107,7 @@
 	$('.menu-block, .menu-item, #close').on('click', function () {
 		$('.content-blocks').animate({ scrollTop: 0 }, 800);
 	});
-	
+
+
+
 })(jQuery);
