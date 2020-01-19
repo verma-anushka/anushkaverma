@@ -94,6 +94,42 @@ small {
     color: #333;
 }
 
+/*  */
+.header h1 {
+    position: relative;
+    font-size: 54px;
+    color: #1e1e1e;
+    z-index: 99;
+    padding-bottom: 30px;
+    text-transform: initial;
+}
+.header h1:before {
+    position: absolute;
+    color: #dedede;
+    text-transform: uppercase;
+    left: -5px;
+    top: 12px;
+    z-index: -1;
+}
+.block-header {
+    font-family: 'Kaushan Script', sans-serif;
+}
+.about .header h1:before {
+    content: 'about';
+}
+.timeline .header h1:before {
+    content: 'education';
+}
+.skills .header h1:before {
+    content: 'skills';
+}
+.portfolio .header h1:before {
+    content: 'portfolio';
+}
+.contact .header h1:before {
+    content: 'contact';
+}
+
 /* BUTTONS */
 a:not([href]):not([tabindex]) {
     color: #FFF;
@@ -599,7 +635,7 @@ h2.menu-item:after {
     top: 0;
 }
 .content {
-    padding: 120px 70px 30px;
+    padding: 70px 50px 30px;
 }
 .content-blocks.pop {
     left: 100%;
@@ -766,7 +802,7 @@ h2.menu-item:after {
     margin-left:auto;
     margin-right:auto;
 }
-#design2 {
+#flag {
     position:relative;
     text-align:center;
     font-family:Poiret One;
