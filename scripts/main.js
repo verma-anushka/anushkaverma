@@ -109,5 +109,10 @@
 	});
 
 
-
+	// 
+	$('.project-box').on('mouseover', function() {
+		var index = $('.project-box').index(this);
+		$('.bg-changer .section-bg').removeClass('active').eq(index).addClass('active');
+	});
+	
 })(jQuery);
