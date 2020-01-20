@@ -32,6 +32,7 @@
     <link rel="stylesheet" href="styles/style.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="styles/about.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="styles/portfolio.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="styles/contact.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="styles/responsive.css" type="text/css" media="screen" />
 
 </head>
@@ -337,6 +338,39 @@
 
                     <div id="effect">
                         <div id="flag"></div>
+                    </div>
+
+                    <div class="form">
+                        
+                        <form id="contact-form">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <input id="name" class="form-control" type="text" name="name"
+                                            placeholder="Your Name" required />
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <input id="email" class="form-control" type="email" name="email"
+                                            placeholder="Your Email" required />
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <input id="subject" class="form-control" type="text" name="subject"
+                                    placeholder="Subject" />
+                            </div>
+
+                            <div class="message" >
+                                <div class="form-group">
+                                    <textarea id="msg" class="form-control" placeholder="Write Your message here ..."
+                                        required></textarea>
+                                </div>
+                                <a target="_blank" href="#" class="btn btn-send">Send</a>
+                            </div>
+                        </form>
                     </div>
 
                 </div>

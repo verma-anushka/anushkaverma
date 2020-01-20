@@ -1,0 +1,91 @@
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script:400,700);
+
+/*  */
+.content-blocks.contact {
+    position: absolute;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.form {
+    padding: 100px 30px 0;
+}
+.form .form-group textarea,
+.form .form-group input {
+    /* width: 95%; */
+    border: none;
+    border-radius: 0;
+    width: 90%;
+    text-align: left;
+    margin: auto;
+    font-size: 14px;
+    margin-bottom: 22px;
+}
+.form .form-group #subject {
+    width: 95%;
+}
+.form .form-group textarea::placeholder,
+.form .form-group input::placeholder {
+    color: #bbb;
+}
+.form .form-group textarea {
+    width: 95%;
+    height: 100px;
+    resize: none;
+}
+.form .form-group textarea,
+.form .form-group input {
+    border-bottom: 2px solid #141414;
+}
+.btn-send {
+    border: none;
+    font-size: 14px;
+    padding: 16px 55px 16px 25px;
+}
+.btn-send:hover {
+    border: none;
+    color: #FFF;
+    background-color: #333;
+    letter-spacing: 2px;
+}
+.btn-send:before {
+    position: absolute;
+    content: '\f1d8';
+    font-family: 'Font Awesome 5 Free';
+    top: 12px;
+    right: 16px;
+    font-size: 24px;
+}
+.btn-send:hover:before {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: fadeOutDown;
+    animation-name: fadeOutDown;
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+}
+.btn-send:after {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    z-index: -1;
+    transition: all .3s;
+}
+.btn-send:hover:after {
+    width: 58px;
+    height: 70px;
+    right: -5px;
+    top: -5px;
+    -ms-transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+}
+
