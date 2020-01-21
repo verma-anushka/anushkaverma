@@ -453,7 +453,7 @@ a:not([href]):not([tabindex]) {
 #splash a:hover {
     color: #e7e7e7;
 }
-.social {
+/* .social {
     position: absolute;
     bottom: 15%;
 }
@@ -479,7 +479,7 @@ a:not([href]):not([tabindex]) {
     background-color: rgba(255, 255, 255, 0.7);
     border: 2px solid transparent;
     color: #333;
-}
+} */
 
    
 /* MENU STYLES */
