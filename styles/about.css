@@ -4,7 +4,7 @@
     position: absolute;
     height: 300px;
     width: 600px;
-    top: 220px;
+    top: 210px;
     left: calc(50% - 300px);
     display: flex;
 }
@@ -39,5 +39,46 @@
     position: absolute;
     left: 20px;
     top: 15px;
+}
+
+.about-services {
+    position: absolute;
+    top: 80%;
+    width: 80%;
+    padding-left: 13%;
+}
+.about-services span {
+    display: block;
+    text-align: center;
+}
+.about-services span.key-fact {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Hind", sans-serif;
+    color: #000;
+    line-height: 1.5;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 16px;
+}
+.about-services i {
+    color: #6f6f71;
+    font-weight: 700;
+    font-size: 60px;
+    display: inline-block;
+    perspective: 1000px;
+    -moz-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+.about-services .icon-wrap:hover i {
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    color: #000;
 }
 
