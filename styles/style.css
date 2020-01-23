@@ -620,7 +620,7 @@ h2.menu-item:after {
 .content-blocks {
     position: absolute;
     width: 75%;
-    height: 100vh;
+    /* height: 100vh; */
     opacity: 0.5;
     /* overflow-x: scroll; */
     /* overflow-y: scroll; */

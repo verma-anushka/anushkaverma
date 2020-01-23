@@ -110,6 +110,35 @@
 
 
 	// 
+	$.fn.timeline = function() {
+		var selectors = {
+		  id: $(this),
+		  item: $(this).find(".timeline-item"),
+		  activeClass: "timeline-item--active",
+		  img: ".timeline-img"
+		};
+		selectors.item.eq(0).addClass(selectors.activeClass);
+		var itemLength = selectors.item.length;
+
+		$(window).scroll(function() {
+		  var max, min;
+		  var pos = $(this).scrollTop();
+		  selectors.item.each(function(i) {
+			min = $(this).offset().top;
+			max = $(this).height() + $(this).offset().top;
+			if (i == itemLength - 2 && pos > min + $(this).height() / 2) {
+			  selectors.item.removeClass(selectors.activeClass);
+			  selectors.item.last().addClass(selectors.activeClass);
+			} else if (pos <= max - 40 && pos >= min - 180) {
+			  selectors.item.removeClass(selectors.activeClass);
+			  $(this).addClass(selectors.activeClass);
+			}
+		  });
+		});
+	};
+
+
+	// 
 	$('.project-box').on('mouseover', function() {
 		var index = $('.project-box').index(this);
 		$('.bg-changer .section-bg').removeClass('active').eq(index).addClass('active');
