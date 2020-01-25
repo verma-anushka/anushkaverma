@@ -61,6 +61,7 @@
 
 		$("#timeline-1").timeline();
 		$("#timeline-2").timeline();
+		$("#timeline-3").timeline();
 	});
 	//On Click Open Skills Block
 	$('.skills-block, .menu-item.skills').on('click', function () {
