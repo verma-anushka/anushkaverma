@@ -3,7 +3,7 @@
 	font-family: sans-serif;
 	margin: 0;
 	padding: 0;
-	height: 100vh;
+	height: 136vh;
 }
 .bg-changer {
 	position: absolute;
@@ -43,6 +43,8 @@
 }
 .gallery {
 	position: relative;
+	margin-left: 60px;
+	margin-top: 60px;
 }
 .project-box {
     -webkit-clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
@@ -71,7 +73,7 @@
     content: '';
     position: absolute;
     opacity: 0.5;
-    width: 350px;
+    width: 250px;
     height: 70px;
     background: #fff;
     top: 0;
@@ -83,7 +85,7 @@
 .project-box:hover:before {
 	overflow-x: hidden;
     overflow-y: hidden;
-    transform: translate(-100px,400%) rotate(45deg);
+    transform: translate(-100px,300%) rotate(45deg);
     transition: transform 0.5s;
 }
 .project-box:nth-child(1) {

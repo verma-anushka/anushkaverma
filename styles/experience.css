@@ -3,12 +3,11 @@
 .content-blocks.timeline {
     font-family: sans-serif;
     margin: 0;
-    padding: 0;
-    background: #fff;
+	padding: 0;
+    height: 350vh;	
 }
 .timeline-container {
 	width: 100%;
-	height: 120vh;
 	position: relative;
 	padding: 24px 0;
 	transition: 0.3s ease 0s;

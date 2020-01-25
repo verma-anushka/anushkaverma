@@ -117,8 +117,14 @@ small {
 .about .header h1:before {
     content: 'about';
 }
-.timeline .header h1:before {
+.timeline .header.education-header h1:before {
     content: 'education';
+}
+.timeline .header.experience-header h1:before {
+    content: 'experience';
+}
+.timeline .header.trainings-header h1:before {
+    content: 'trainings';
 }
 .skills .header h1:before {
     content: 'skills';

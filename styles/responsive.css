@@ -713,3 +713,26 @@
     }
 }
 
+@media only screen and (max-width: 767px) {
+	.education-timeline:before {
+		left: 40px;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.timeline-item {
+		align-self: baseline !important;
+		width: 100%;
+		padding: 0 30px 150px 80px;
+	}
+	.timeline-item:before {
+		left: 10px !important;
+		padding: 0 !important;
+		top: 50px;
+		text-align: center !important;
+		width: 60px;
+		border: none !important;
+	}
+	.timeline-item:last-child {
+		padding-bottom: 40px;
+	}
+}

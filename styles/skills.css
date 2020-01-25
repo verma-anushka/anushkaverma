@@ -4,6 +4,13 @@
     font-family: sans-serif;
     margin: 0;
     padding: 0;
+    height: 120vh;
+}
+.skills-container {
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    transform: scale(0.8);
 }
 .circle-toggle {
     width: 265px;
@@ -147,7 +154,7 @@
     transition: all 200ms ease-in;
 }
 .c1-wrap {
-    position: relative;
+    /* position: relative; */
     width: 900px;
     height: 800px;
     margin: 0 auto;

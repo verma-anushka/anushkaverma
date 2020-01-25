@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Abel');
 
+.content-blocks.about {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
 .about-cards {
     position: absolute;
     height: 300px;

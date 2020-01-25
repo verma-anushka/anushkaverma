@@ -6,16 +6,16 @@
     font-family: sans-serif;
     margin: 0;
     padding: 0;
+    height: 100vh;
 }
 .contact .content {
     padding-bottom: 0;
 }
 .form {
-    padding: 69px 60px 0;
+    padding: 85px 60px 0;
 }
 .form .form-group textarea,
 .form .form-group input {
-    /* width: 95%; */
     border: none;
     border-radius: 0;
     width: 90%;
@@ -101,8 +101,8 @@
     background-color: #404040;
     color: #999;
     text-shadow: -1px -1px 0px #181818;
-    width: 49rem;
-    margin-left: 5%;
+    width: 31rem;
+    margin-left: 23%;
     background-image: url(../images/bg.png);
     box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05), inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
 }
@@ -111,7 +111,7 @@ hr {
     border-top: solid 1px #444;
     border-top-color: rgba(0, 0, 0, 0.35);
     box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.1);
-    height: 20px;
+    height: 10px;
     margin: 0;
 }
 ul.social {
@@ -129,7 +129,7 @@ ul.social {
     padding-left: 15px;
     cursor: default;
     margin: 0;
-    padding: 1em 0.5em 0 0.5em;
+    padding: 0.5em 0.5em 0 0.5em;
 }
 ul.social li {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -162,13 +162,6 @@ ul.social li a {
     /* vertical-align: baseline; */
     color: #337ab7;
     text-decoration: none;
-    transition: top .2s ease-in-out;
-    display: block;
-    width: 48px;
-    height: 48px;
-    border-radius: 6px;
-    top: 0;
-    position: relative;
     background-color: #FAFAFA;
     -moz-transition: top .2s ease-in-out;
     -webkit-transition: top .2s ease-in-out;
