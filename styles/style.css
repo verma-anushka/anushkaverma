@@ -130,7 +130,7 @@ small {
     content: 'skills';
 }
 .portfolio .header h1:before {
-    content: 'portfolio';
+    content: 'projects';
 }
 .contact .header h1:before {
     content: 'contact';
