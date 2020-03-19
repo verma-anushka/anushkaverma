@@ -99,7 +99,7 @@ small {
     position: relative;
     font-size: 54px;
     color: #1e1e1e;
-    z-index: 99;
+    z-index: 40;
     padding-bottom: 30px;
     text-transform: initial;
 }
@@ -773,11 +773,12 @@ h2.menu-item:after {
     width: 100%;
     left: -0%;
     position: absolute;
+    z-index: 10;
     border-bottom: 10px solid #f0f0f0;
     box-shadow: 0 0 15px rgba(0,0,0,0.5);
 }
 #effect:after {
-    z-index:200;
+    z-index:20;
     content:'';
     width: 0;
     position:absolute;
@@ -794,7 +795,7 @@ h2.menu-item:after {
     -webkit-filter: drop-shadow( 0 0 15px rgba(0,0,0,0.5) );
 }
 #effect:before {
-    z-index:300;
+    z-index:30;
     content:'';
     width: 0;
     position:absolute;
