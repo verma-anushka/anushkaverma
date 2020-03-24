@@ -145,4 +145,25 @@
 		$('.bg-changer .section-bg').removeClass('active').eq(index).addClass('active');
 	});
 	
+	// 
+	$('.btn-send').on('click', function (event) {
+		event.preventDefault();
+
+		var email = 'anushkarvp1999@gmail.com';
+		var useremail = $('#email').val();
+		var username = $('#name').val();
+		var subject = $('#subject').val();
+		var msg = $('#msg').val();
+		var emailBody = `
+							${msg}
+							%0A%0A
+							Please get back to me at: ${useremail}
+							%0A%0A
+							${username}
+						`
+		// console.log(emailBody);
+		window.open('mailto:' + email + '?subject=' + subject + '&body=' +  emailBody);
+	});
+
 })(jQuery);
+

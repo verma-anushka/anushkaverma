@@ -53,7 +53,7 @@
 }
 .btn-container .btn-send:hover {
   border: none;
-  color: #fff;
+  color: #fff !important;
   background-color: #333;
   letter-spacing: 2px;
 }
