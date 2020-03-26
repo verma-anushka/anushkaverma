@@ -146,24 +146,61 @@
 	});
 	
 	// 
-	$('.btn-send').on('click', function (event) {
-		event.preventDefault();
 
-		var email = 'anushkarvp1999@gmail.com';
-		var useremail = $('#email').val();
-		var username = $('#name').val();
-		var subject = $('#subject').val();
-		var msg = $('#msg').val();
-		var emailBody = `
-							${msg}
-							%0A%0A
-							Please get back to me at: ${useremail}
-							%0A%0A
-							${username}
-						`
-		// console.log(emailBody);
-		window.open('mailto:' + email + '?subject=' + subject + '&body=' +  emailBody);
+	$("form[name='contact-form']").validate({
+		rules: {
+			name: "required",
+			email: {
+				required: true,
+				email: true
+			},
+			msg: "required"
+		},
+		messages: {
+			name: "Please enter your full name!",
+			email: "Please enter a valid email address!",
+			msg: "Please leave a message..."
+		},
+		
+		submitHandler: function(form) {
+		// form.submit();
+
+			$("form").submit(function(event) {
+			// 	alert("Submitted");
+			// });
+			// $('.btn-send').on('click', function (event) {
+				event.preventDefault();
+
+				if(!$(this).val()){
+					$(this).addClass("error");
+				} else{
+					$(this).removeClass("error");
+				}
+				var email = 'anushkarvp1999@gmail.com';
+				var useremail = $('#email').val();
+				var username = $('#name').val();
+				var subject = $('#subject').val();
+				var msg = $('#msg').val();
+				var emailBody = `
+									${msg}
+									%0A%0A
+									Please get back to me at: ${useremail}
+									%0A%0A
+									${username}
+								`
+				// console.log(emailBody);
+				window.open('mailto:' + email + '?subject=' + subject + '&body=' +  emailBody);
+				// window.location.reload(true);
+				 $('#email').val("");
+				 $('#name').val("");
+				 $('#subject').val("");
+				 $('#msg').val("");
+
+			});
+		}
 	});
+
+	
 
 })(jQuery);
 

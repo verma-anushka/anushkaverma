@@ -45,7 +45,21 @@
   margin-bottom: 20px;
   text-align: center;
 }
+form .error {
+  font-size: 13px;
+  color: #ff0000;
+}
+.form label[for='name'], 
+.form label[for='email'] {
+  position: absolute;
+  top: 30px;
+}
+.form label[for='msg'] {
+  position: absolute;
+  bottom: 150px;
+}
 .btn-container .btn-send {
+  cursor: pointer;
   border: none;
   font-size: 14px;
   margin: 0;

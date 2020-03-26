@@ -1171,7 +1171,7 @@
             </div>
 
             <div class="form" action="mailto:anushkarvp1999@gmail.com" method="post" enctype="text/plain">
-              <form id="contact-form">
+              <form id="contact-form" name="contact-form">
                 <div class="row">
                   <div class="col-6">
                     <div class="form-group">
@@ -1181,7 +1181,6 @@
                         type="text"
                         name="name"
                         placeholder="Your Name"
-                        required
                       />
                     </div>
                   </div>
@@ -1193,7 +1192,6 @@
                         type="email"
                         name="email"
                         placeholder="Your Email"
-                        required
                       />
                     </div>
                   </div>
@@ -1206,7 +1204,6 @@
                     type="text"
                     name="subject"
                     placeholder="Subject"
-                    required
                   />
                 </div>
 
@@ -1214,13 +1211,13 @@
                   <div class="form-group">
                     <textarea
                       id="msg"
+                      name="msg"
                       class="form-control"
                       placeholder="Write your message here ..."
-                      required
                     ></textarea>
                   </div>
                   <div class="btn-container">
-                      <button type="submit" class="btn btn-send">
+                      <button type="submit" class="btn btn-send" >
                         <a target="_blank">Send</a>
                       </button>
                   </div>
@@ -1276,7 +1273,14 @@
       </div>
     </div>
 
+
     <script src="scripts/plugins.min.js"></script>
+
+<!-- <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.0.js"></script> -->
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
     <script src="scripts/main.js"></script>
+    
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script> -->
   </body>
 </html>
