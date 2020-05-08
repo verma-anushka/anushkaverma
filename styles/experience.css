@@ -43,6 +43,18 @@
   font-family: "Pathway Gothic One", sans-serif;
   color: #fff;
 }
+.timeline-content-date {
+  margin: 0;
+  font-size: 12px;
+  box-sizing: border-box;
+  font-family: Cardo;
+  font-weight: 100;
+  color: #999;
+  line-height: 23px;
+  width: 280px;
+  text-align: justify;
+  text-transform: uppercase;
+}
 .timeline-content-desc {
   margin: 0;
   font-size: 15px;
@@ -51,6 +63,7 @@
   font-weight: normal;
   line-height: 23px;
   width: 280px;
+  color: #333;
   text-align: justify;
 }
 .education-timeline h1 {
