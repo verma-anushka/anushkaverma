@@ -1,10 +1,10 @@
+/************************************** EXPERIENCE BLOCK *************************************/
 @import url("https://fonts.googleapis.com/css?family=Cardo|Pathway+Gothic+One");
 
 .content-blocks.timeline {
   font-family: sans-serif;
   margin: 0;
   padding: 0;
-  /* height: 100%; */
 }
 .timeline-container {
   width: 100%;
@@ -148,3 +148,4 @@
   height: 182px;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
 }
+

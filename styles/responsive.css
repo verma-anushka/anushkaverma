@@ -1,5 +1,4 @@
-
-/*  */
+/************************************** RESPONSIVE *************************************/
 
 @media (min-width:1920px) {
     .name-block {
@@ -113,7 +112,6 @@
     h2.portfolio.menu-item {
         margin-top: 220px;
         margin-left: 110px;
-        /* vertical-align: center; */
     }
 }
 
@@ -184,15 +182,12 @@
         margin: 44px;
     }
     h2.timeline.menu-item {
-        /* margin: 80px;
-        margin-right: 50px; */
         font-size: 36px;
         font-weight: 500;
     }
     h2.portfolio.menu-item {
         margin-top: 160px;
         margin-left: 70px;
-        /* vertical-align: center; */
     }
 }
 
@@ -375,7 +370,6 @@
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
         width: 100%;
-        /* height: auto; */
         border: none;
         border-bottom: 1px solid rgba(255, 255, 255, 0.5);
         display: table;
@@ -584,9 +578,6 @@
         width: 100%;
         left: 0;
     }
-    /* h2.about.menu-item {
-        margin: 50px;
-    } */
 }
 
 @media (max-width:767px) {
@@ -617,9 +608,6 @@
     .content-blocks.pop.showx {
         height: 100vh;
     }
-    /* .menu4 .name-block.reverse {
-        padding-left: 0;
-    } */
     .exp .hgroup h4,
     .exp .hgroup h5 {
         display: table;
@@ -736,3 +724,4 @@
 		padding-bottom: 40px;
 	}
 }
+

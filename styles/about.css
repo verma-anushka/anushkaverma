@@ -1,3 +1,4 @@
+/************************************** ABOUT ME BLOCK *************************************/
 @import url("https://fonts.googleapis.com/css?family=Abel");
 
 .content-blocks.about {
@@ -22,7 +23,6 @@
   border-radius: 10px;
   background: linear-gradient(#000, grey);
   box-shadow: -0.3rem 0 0.2em #000;
-  /* box-shadow: -1rem 0 3rem #000; */
   transition: 0.4s ease-out;
   position: relative;
   left: 0px;
@@ -50,7 +50,6 @@
   top: 15px;
   margin: 10px 16px 0 0;
 }
-
 .about-services {
   position: absolute;
   top: 80%;

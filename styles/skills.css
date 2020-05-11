@@ -1,3 +1,4 @@
+/************************************** SKILLS BLOCK *************************************/
 
 .content-blocks.skills {
     position: absolute;
@@ -45,10 +46,6 @@
     -o-transition: all 250ms ease-in;
     -ms-transition: all 250ms ease-in;
     transition: all 250ms ease-in;
-   /*-webkit-transition: all 1s ease-in 350ms;
-    */
-   /*-webkit-transition: all 1s ease-in 350ms;
-   */
 }
 .circle-toggle .active .inner-thin-layer {
     position: absolute;
@@ -120,13 +117,6 @@
     line-height: 26px;
 }
 .circle-toggle .blurb .blurb-title {
-    /* font-size: 25px;
-    color: #555;
-    text-align: center;
-    text-transform: uppercase;
-    margin: 0; */
-    /* position: absolute;
-    line-height: 0px; */
     left: -20px;
     color: #555;
     text-transform: uppercase;
@@ -168,7 +158,6 @@
     transition: all 200ms ease-in;
 }
 .c1-wrap {
-    /* position: relative; */
     width: 900px;
     height: 800px;
     margin: 0 auto;

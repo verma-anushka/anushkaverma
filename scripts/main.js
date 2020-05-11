@@ -1,8 +1,8 @@
 (function ($) {
 	"use strict";
 
+	// PRELOADER
 	$(window).on('load', function () {
-
 		setTimeout(function () {
 			$(".pin").text("Loading");
 			$(".loader-wrap").fadeTo(750, 1, function () {
@@ -11,13 +11,13 @@
 				}, 750);
 			});
 		}, 1500);
-
 		setTimeout(function () {
 			$(".preloader").css("opacity", "0");
 		}, 2500);
 
 	});
 
+	// LANDING SCREEN TEXT CAROUSEL
 	$('#text-slider').owlCarousel({
 		nav: false,
 		items: 1,
@@ -28,8 +28,7 @@
 		autoplayHoverPause: true,
 	});
 
-
-	//On Click Open Menu Items
+	// ON CLICK MENU ITEMS
 	$('.menu-block, .menu-item').on('click', function () {
 		$('.name-block').addClass('reverse');
 		$('.name-block-container').addClass('reverse');
@@ -41,7 +40,8 @@
 		$('.inline-menu-container').addClass('showx');
 		$('.inline-menu-container.style2').addClass('dark');
 	});
-	//On Click Open About/Resume Block
+
+	//  ON CLICK ABOUT BLOCK
 	$('.about-block, .menu-item.about').on('click', function () {
 		$('.content-blocks').removeClass('showx');
 		$('.content-blocks.about').addClass('showx');
@@ -50,7 +50,8 @@
 		$('.menu-item').removeClass('active');
 		$('.menu-item.about').addClass('active');
 	});
-	//On Click Open Timeline Block
+
+	//  ON CLICK EXPERIENCE BLOCK
 	$('.timeline-block, .menu-item.timeline').on('click', function () {
 		$('.content-blocks').removeClass('showx');
 		$('.content-blocks.timeline').addClass('showx');
@@ -58,12 +59,12 @@
 		$('.content-blocks.timeline').removeClass('hide');
 		$('.menu-item').removeClass('active');
 		$('.menu-item.timeline').addClass('active');
-
 		$("#timeline-1").timeline();
 		$("#timeline-2").timeline();
 		$("#timeline-3").timeline();
 	});
-	//On Click Open Skills Block
+
+	//  ON CLICK SKILLS BLOCK
 	$('.skills-block, .menu-item.skills').on('click', function () {
 		$('.content-blocks').removeClass('showx');
 		$('.content-blocks.skills').addClass('showx');
@@ -72,7 +73,8 @@
 		$('.menu-item').removeClass('active');
 		$('.menu-item.skills').addClass('active');
 	});
-	//On Click Open Portfolio Block
+
+	// ON CLICK PORTFOLIO BLOCK
 	$('.portfolio-block, .menu-item.portfolio').on('click', function () {
 		$('.content-blocks').removeClass('showx');
 		$('.content-blocks.portfolio').addClass('showx');
@@ -81,7 +83,8 @@
 		$('.menu-item').removeClass('active');
 		$('.menu-item.portfolio').addClass('active');
 	});
-	//On Click Open Contact Block
+
+	// ON CLICK CONTACT BLOCK
 	$('.contact-block, .menu-item.contact').on('click', function () {
 		$('.content-blocks').removeClass('showx');
 		$('.content-blocks.contact').addClass('showx');
@@ -90,7 +93,8 @@
 		$('.menu-item').removeClass('active');
 		$('.menu-item.contact').addClass('active');
 	});
-	//On Click Close Blocks
+
+	// ON CLICK CLOSE BLOCKS BUTTON
 	$('#close').on('click', function () {
 		$('.name-block').removeClass('reverse');
 		$('.name-block-container').removeClass('reverse');
@@ -109,8 +113,7 @@
 		$('.content-blocks').animate({ scrollTop: 0 }, 800);
 	});
 
-
-	// 
+	// EXPERIENCE BLOCK SCROLL
 	$.fn.timeline = function() {
 		var selectors = {
 		  id: $(this),
@@ -138,8 +141,7 @@
 		});
 	};
 
-
-	// 
+	// PORTFOLIO BLOCK BACKGROUND CHANGE 
 	$('.project-box').on('mouseover', function() {
 		var index = $('.project-box').index(this);
 		$('.bg-changer .section-bg').removeClass('active').eq(index).addClass('active');
@@ -147,8 +149,7 @@
 		$('.bg-changer .section-bg').removeClass('active');
 	});
 	
-
-	// 
+	// CONTACT FORM VALIDATIONS 
 	$("form[name='contact-form']").validate({
 		rules: {
 			name: "required",
@@ -165,7 +166,6 @@
 		},
 		
 		submitHandler: function(form) {
-
 			$("form").submit(function(event) {
 				event.preventDefault();
 
@@ -196,8 +196,6 @@
 			});
 		}
 	});
-
-	
 
 })(jQuery);
 

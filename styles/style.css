@@ -1,5 +1,5 @@
+/************************************** GENERAL STYLES *************************************/
 
-/* GENERAL */
 body {
     font: 400 14px 'Poppins', sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -93,8 +93,6 @@ strong,
 small {
     color: #333;
 }
-
-/*  */
 .header h1 {
     position: relative;
     font-size: 54px;
@@ -220,7 +218,6 @@ a:not([href]):not([tabindex]) {
     transform: rotate(15deg);
 }
 
-/*  */
 /* PAGE PRELOADER */
 .loader-wrap {
     position: fixed;
@@ -282,7 +279,7 @@ a:not([href]):not([tabindex]) {
     }
 }
 
-/*  */
+/* BACKGROUND */
 #main {
 	height: 100%;
 	width: 100%;
@@ -328,7 +325,7 @@ a:not([href]):not([tabindex]) {
     opacity: 0.0;
 }
 
-/* */
+/* TEXT CAROUSEL */
 #text-slider {
     width: 400px;
 }
@@ -338,7 +335,6 @@ a:not([href]):not([tabindex]) {
 #text-slider .owl-item.active {
     visibility: visible;
 }
-
 
 /* NAME */
 .name-block {
@@ -459,34 +455,6 @@ a:not([href]):not([tabindex]) {
 #splash a:hover {
     color: #e7e7e7;
 }
-/* .social {
-    position: absolute;
-    bottom: 15%;
-}
-.social li {
-    display: inline-block;
-    margin-right: 2px;
-    text-align: center;
-}
-.social a {
-    border: 2px solid #FFF;
-    border-radius: 50%;
-    color: #FFF;
-    display: inline-block;
-    height: 35px;
-    width: 35px;
-    transition: all 0.5s;
-}
-.social li i {
-    line-height: 32px;
-    font-size: 12px;
-}
-.social a:hover {
-    background-color: rgba(255, 255, 255, 0.7);
-    border: 2px solid transparent;
-    color: #333;
-} */
-
    
 /* MENU STYLES */
 .menu-blocks {
@@ -626,15 +594,11 @@ h2.menu-item:after {
 .content-blocks {
     position: absolute;
     width: 75%;
-    /* height: 100vh; */
     opacity: 0.5;
-    /* overflow-x: scroll; */
-    /* overflow-y: scroll; */
     top: 100%;
     left: 25%;
     background: #FFF;
     transition: opacity 0.7s ease-out;
-    /* -webkit-overflow-scrolling: touch; */
 }
 .content-blocks.showx {
 	opacity: 1;
@@ -657,9 +621,7 @@ h2.menu-item:after {
     padding-top: 110px;
 }
 
-
-
-/* ABOUT */
+/* ABOUT BLOCK */
 .about-block {
     position: absolute;
     width: 430px;
@@ -681,8 +643,7 @@ h2.menu-item:after {
     transform: rotate(34deg);
 }
 
-
-/* TIMELINE */
+/* TIMELINE BLOCK */
 .timeline-block {
     position: absolute;
     width: 430px;
@@ -702,7 +663,6 @@ h2.menu-item:after {
     -webkit-transform: rotate(34deg);
     transform: rotate(34deg);
 }
-
 
 /* SKILLS BLOCK */
 .skills-block {
@@ -726,7 +686,7 @@ h2.menu-item:after {
     transform: rotate(34deg);
 }
 
-/* PORTFOLIO SECTION */
+/* PORTFOLIO  BLOCK */
 .portfolio-block {
     position: absolute;
     width: 430px;
@@ -747,7 +707,7 @@ h2.menu-item:after {
     transform: rotate(34deg);
 }
 
-/* CONTACT */
+/* CONTACT BLOCK */
 .contact-block {
     position: absolute;
     width: 430px;
@@ -768,12 +728,11 @@ h2.menu-item:after {
     transform: rotate(34deg);
 }
     
-
+/* HEADER */
 #effect {
     width: 100%;
     left: -0%;
     position: absolute;
-    /* z-index: 10; */
     border-bottom: 10px solid #f0f0f0;
     box-shadow: 0 0 15px rgba(0,0,0,0.5);
 }
@@ -817,3 +776,4 @@ h2.menu-item:after {
     font-weight:700;
     color:#808080;
 }
+

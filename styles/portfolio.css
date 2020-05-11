@@ -1,3 +1,4 @@
+/************************************** PORTFOLIO BLOCK *************************************/
 .content-blocks.portfolio {
   position: absolute;
   font-family: sans-serif;
@@ -34,9 +35,6 @@
   -o-transform: scale(1.05);
   transform: scale(1.05);
 }
-/* .bg-changer .section-bg:first-child {
-	opacity: 1;
-} */
 .gallery {
   position: relative;
   margin-left: 60px;
@@ -46,11 +44,6 @@
   width: 100%;
   height: 100%;
 }
-/* #clipped {
-	-webkit-clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
-	clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
-	
-	} */
 .project-box {
   -webkit-clip-path: polygon(
     50% 0%,
@@ -156,3 +149,4 @@
   transition: transform 0.2s;
   z-index: 10;
 }
+
