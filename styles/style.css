@@ -93,6 +93,20 @@ strong,
 small {
   color: #333;
 }
+/* .main-menu a .medium {
+  margin-bottom: -4px;
+  background-color: #333;
+  transition: background-color 0.2s ease-in-out;
+  border-radius: 6px;
+  box-shadow: inset 0px 0px 0px 1px #fff,
+    inset 0px 2px 1px 0px rgba(255, 255, 255, 0.1);
+  height: 42px;
+  line-height: 43px;
+  text-align: center;
+  outline: 0;
+  overflow: hidden;
+  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.1);
+} */
 .header h1 {
   position: relative;
   font-size: 54px;
@@ -391,6 +405,9 @@ a:not([href]):not([tabindex]) {
 .name-block-container h2 {
   font-size: 32px;
   min-height: 32px;
+}
+.name-block-container .left-menu h2 {
+  margin-left: -10px;
 }
 .name-block-container h1 span {
   font-size: 26px;
